@@ -34,6 +34,7 @@ To get a random character set for use in obfuscation, the node `String Obfuscati
 | Parameter | Description |
 | ------ | ------ |
 | `boolean` Print To Server Game Log | Will print the generated string to the server game log wrapped in double quotes |
+
 The Output string will go in your `GameUserSettings.ini` under the configuration section `HTTPObfuscation` with the option value `ObfuscationCharacterSet` including the double quotes. The section and option names can be changed to suit your needs in the function library.
 
 ###### Example `GameUserSettings.ini` Configuration:
