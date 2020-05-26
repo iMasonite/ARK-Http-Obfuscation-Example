@@ -22,6 +22,7 @@ HTTP in the ARK development Kit has no support for SSL or secure hashing, so the
 ### Default Character Set.
 The `String Obfuscation Default Character Set` is a fixed string of characters used as the base for obfuscating and deobfuscating. I have chosen to omit common container, white space and escape characters from the default set although this can be added in your own usage. 
 I have had experience with incorrect JSON decodes when obfuscating white space escape characters and other container characters such as "{} ()\/" etc.
+
 ![N|Solid](https://i.imgur.com/OsSGPMV.png)
 ```txt
 !#$%&*+,-.0123456789:;=?@ABCDEFGHIJKLMNOPQRSTUVWXYZ^_`abcdefghijklmnopqrstuvwxyz|~¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþ
@@ -99,9 +100,10 @@ The PHP Test page has two defined values `DEFAULT_CHARACTER_SET` & `RANDOMISED_C
 
 | Query Parameters | Description | Example|
 | ------ | ------ | ------ |
-| `rolls|integer` | Like with the String Obfuscation node in the mod library function the amount of rolls must match the obfuscated string being processed. Defaults to `1` if not specified. | `test_api.php?rolls=2`
-| `plain|boolean` | If set to `true` the response JSON object will not be obfuscated. defaults to `false` if not specified. | `test_api.php?plain=true` |
+| `rolls integer` | Like with the String Obfuscation node in the mod library function the amount of rolls must match the obfuscated string being processed. Defaults to `1` if not specified. | `test_api.php?rolls=2`
+| `plain boolean` | If set to `true` the response JSON object will not be obfuscated. defaults to `false` if not specified. | `test_api.php?plain=true` |
 | `testsite` | Tests can be run using this option | `test_api.php?testsite` |
+
 `plain` & `rolls` can be used together, example: `test_api.php?rolls=2&plain=true`
 
 More comments and documentation available in `test_api.php`.
