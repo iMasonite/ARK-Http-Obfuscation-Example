@@ -2,7 +2,9 @@
 ### Purpose:
 A basic example Mod & PHP REST Endpoint for HTTP requests in the ARK Development Kit
 
-HTTP in the ARK development Kit has no support for SSL or secure hashing, so the only thing available (to my limited knowledge) is obfuscation. This example demonstrates how JSON string obfuscation can be achieved and utilised in the ARK Development Kit.
+The ARK development Kit uses Transport Layer Security so this is not required if your endpoint is certificated.
+
+This example demonstrates how JSON string obfuscation can be achieved and utilised in the ARK Development Kit.
 
   - This is not to be considered *"secure"*, only more difficult to decipherer.
   - This should not be used to pass highly sensitive information across an insecure connection.
