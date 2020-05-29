@@ -17,10 +17,10 @@ header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers
 // Static Value Definitions
 
 // The default character set should match the hard coded character set in the mod's function `String Obfuscation Get Default Character Set`
-define('DEFAULT_CHARACTER_SET', '!#$%&*+,-.0123456789:;=?@ABCDEFGHIJKLMNOPQRSTUVWXYZ^_`abcdefghijklmnopqrstuvwxyz|~¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþ');
+define('DEFAULT_CHARACTER_SET', '!#$%&*+,-.0123456789:;=?@ABCDEFGHIJKLMNOPQRSTUVWXYZ^_`abcdefghijklmnopqrstuvwxyz~¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþ');
 
 // A random character set generated using the mod's function `String Obfuscation Generate Random Character Set`
-define('RANDOMISED_CHARACTER_SET', 'BÕ¨MÐZÊ?`Í¶7UápÖÅç+Âü®¿ñ¬ÏiJRCsPjA¢|eÇ.&ªdêÓ;8Üâ!·9Ûõ­l³É¤q¥ÙÝn±×¾IûÌÁ»uë¯GO#0Ä¡Àß¹4ÚÒ«ºoS$v¸óöDµfô1%32íùï~zÆòh5æ÷QYWØ¼xNkèFéLbäðÎgà²V*a¦Tå½HãtÈ§þ-mrÔ6=Ã©y_Ë,£cøX´ÑEìú:î°@ý^wKÞ');
+define('RANDOMISED_CHARACTER_SET', 'BÕ¨MÐZÊ?`Í¶7UápÖÅç+Âü®¿ñ¬ÏiJRCsPjA¢eÇ.&ªdêÓ;8Üâ!·9Ûõ­l³É¤q¥ÙÝn±×¾IûÌÁ»uë¯GO#0Ä¡Àß¹4ÚÒ«ºoS$v¸óöDµfô1%32íùï~zÆòh5æ÷QYWØ¼xNkèFéLbäðÎgà²V*a¦Tå½HãtÈ§þ-mrÔ6=Ã©y_Ë,£cøX´ÑEìú:î°@ý^wKÞ');
 
 // For checking Status: test_api.php?status
 if (isset($_GET["status"])) {

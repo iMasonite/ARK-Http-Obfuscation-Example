@@ -22,12 +22,12 @@ This example demonstrates how JSON string obfuscation can be achieved and utilis
   - An out of the box simple example mod ready to test and utilise inside the ADK.
 
 ### Default Character Set.
-The `String Obfuscation Default Character Set` is a fixed string of characters used as the base for obfuscating and deobfuscating. I have chosen to omit common container, white space and escape characters from the default set although this can be added in your own usage. 
-I have had experience with incorrect JSON decodes when obfuscating white space escape characters and other container characters such as "{} ()\/" etc.
+The `String Obfuscation Default Character Set` is a fixed string of characters used as the base for obfuscating and deobfuscating. I have chosen to omit common container, white space and escape characters from the default set although this can be added in your own usage apart from double the standard double quote character as this is ignored by internal checks. 
+I have had experience with incorrect JSON decodes when obfuscating white space escape characters and other container characters such as "{} ()\/" etc and "|" Pipe characters in GUS.ini.
 
 ![N|Solid](https://i.imgur.com/OsSGPMV.png)
 ```txt
-!#$%&*+,-.0123456789:;=?@ABCDEFGHIJKLMNOPQRSTUVWXYZ^_`abcdefghijklmnopqrstuvwxyz|~¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþ
+!#$%&*+,-.0123456789:;=?@ABCDEFGHIJKLMNOPQRSTUVWXYZ^_`abcdefghijklmnopqrstuvwxyz~¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþ
 ```
 
 ### Usage: ADK Random Character Set Generation.
@@ -42,7 +42,7 @@ The Output string will go in your `GameUserSettings.ini` under the configuration
 ###### Example `GameUserSettings.ini` Configuration:
 ```txt
 [HTTPObfuscation]
-ObfuscationCharacterSet="BÕ¨MÐZÊ?`Í¶7UápÖÅç+Âü®¿ñ¬ÏiJRCsPjA¢|eÇ.&ªdêÓ;8Üâ!·9Ûõ­l³É¤q¥ÙÝn±×¾IûÌÁ»uë¯GO#0Ä¡Àß¹4ÚÒ«ºoS$v¸óöDµfô1%32íùï~zÆòh5æ÷QYWØ¼xNkèFéLbäðÎgà²V*a¦Tå½HãtÈ§þ-mrÔ6=Ã©y_Ë,£cøX´ÑEìú:î°@ý^wKÞ"
+ObfuscationCharacterSet="BÕ¨MÐZÊ?`Í¶7UápÖÅç+Âü®¿ñ¬ÏiJRCsPjA¢eÇ.&ªdêÓ;8Üâ!·9Ûõ­l³É¤q¥ÙÝn±×¾IûÌÁ»uë¯GO#0Ä¡Àß¹4ÚÒ«ºoS$v¸óöDµfô1%32íùï~zÆòh5æ÷QYWØ¼xNkèFéLbäðÎgà²V*a¦Tå½HãtÈ§þ-mrÔ6=Ã©y_Ë,£cøX´ÑEìú:î°@ý^wKÞ"
 ```
 
 ### Usage: ADK Obfuscation
